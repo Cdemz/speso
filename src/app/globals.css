@@ -1,11 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;700&family=Dosis:wght@400;500;600;700&family=Lato:wght@400;700;900&family=Lilita+One&family=Luckiest+Guy&family=Montserrat:wght@400;500;900&family=Poppins:ital,wght@0,400;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --color-bg: #f3f4fc;
+  --color-text: #2b2d42;
+  --color-bg-variant: #1e266d;
+  --color-primary-variant: #6f42fb;
+  --color-primary: #7157ec;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +28,34 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #f3f4fc;
+  background: var(--color-primary-g);
+}
+
+.assistant {
+  font-family: "Assistant", sans-serif;
+}
+
+.dosis {
+  font-family: "Dosis", sans-serif;
+}
+
+.lucky {
+  font-family: "Assistant", sans-serif;
+}
+
+.poppins {
+  font-family: "Poppins";
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.lato {
+  font-family: "Lato", sans-serif;
+}
+
+.lili {
+  font-family: "Lilita One", cursive;
 }
